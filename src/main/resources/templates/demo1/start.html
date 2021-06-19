@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Start</title>
+</head>
+<body>
+<p th:text="'現在日時' +  ${#dates.format(session.date, 'yyyy/MM/dd HH:mm:ss')} + 'をセッションの保存しました' "></p>
+<a th:href="@{end(subsessionid=${param.subsessionid})}">確認へ</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+    <script type="text/javascript" src="/js/demo1.js"></script>
+    <script>
+        function openMenu(menuItem) {
+            var session = uuid();
+            var url = menuItem.href + "?subsessionid=" + session;
+            window.open(url);
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    </script>
+</head>
+<body>
+Menu
+<p></p><a th:href="@{/demo1/start}" onclick="openMenu(this)">機能1</a></p>
+<p><a th:href="@{/demo1/start}" onclick="openMenu(this)">機能2</a></p>
+<p><a th:href="@{/demo1/start}" onclick="openMenu(this)">機能3</a></p>
+
+</body>
+</html>

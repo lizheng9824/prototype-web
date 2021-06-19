@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>End</title>
+</head>
+<body>
+<p th:text="'保存した日時：' +  ${#dates.format(session.date, 'yyyy/MM/dd HH:mm:ss')}"></p>
+</body>
+</html>

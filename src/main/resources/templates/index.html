@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>prototype-web</h1>
+<p>このレポジトリはWebアプリケーション開発における技術調査のプロトタイプをまとめるプロジェクトです。</p>
+<br/>
+<h3><a th:href="@{demo1/menu}">Demo 1</a></h3>
+新しいWindowを起動する際に、セッションを共有しないように制御を入れる。
+<ul>
+    <li> Windows起動する際に、一意のIDを作成し、新しいwindowsのパラメタ（subsessionid）に引き渡す。</li>
+    <li> HttpSessionをimplementしたSubSessionを作成する。（内部はMapでattributeを格納）</li>
+    <li> HttpServletRequestWrapperをextendsし、subsessionidがある場合SubSessionを返却。</li>
+</ul>
+
+</body>
+</html>
