@@ -4,3 +4,15 @@ spring:
     url: jdbc:postgresql://localhost:5432/prototype_db
     username: postgres
     password: postgres
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+hope:
+  crypt:
+    decryptKeyPath: c:\tmp\decryptKey
+    decryptIvPath: c:\tmp\decryptIv
+    keyPath: c:\tmp\key
+    ivPath: c:\tmp\iv
+
