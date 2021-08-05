@@ -1,15 +1,13 @@
 package net.itfans.prototype.web.demo2.service;
 
-import net.itfans.prototype.web.demo2.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
+
+import net.itfans.prototype.web.demo2.entity.UserEntity;
 
 @Service
 public class Demo2DispatchService {

@@ -20,7 +20,7 @@ public class CryptConfiguration {
      * @return 暗号化ユーティリティ
      * @throws Exception
      */
-    @Bean
+    // @Bean
     public CryptUtils getCryptUtils(
             @Value("${hope.crypt.decryptKeyPath}")String decryptKeyPath,
             @Value("${hope.crypt.decryptIvPath}")String decryptIvPath,

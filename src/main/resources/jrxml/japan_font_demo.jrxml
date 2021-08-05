@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JapaneseFont" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="008887c1-4402-49a0-bebe-0021363a9f5d">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="397" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="192" height="30" uuid="04313b9f-4856-412a-9188-45307eb8160f"/>
+				<textElement>
+					<font fontName="IPA P Gothic" size="20"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ20]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="192" height="30" uuid="729472ba-42e8-4a7f-b483-8dd89e76f784"/>
+				<textElement>
+					<font fontName="ＭＳ Ｐゴシック" size="20" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ20]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="192" height="30" uuid="c920679d-e89c-4be5-bf68-5c47545e6787"/>
+				<textElement>
+					<font fontName="IPA P Gothic" size="15"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="192" height="30" uuid="45cee7f0-a060-4688-9df7-be07278a5946"/>
+				<textElement>
+					<font fontName="ＭＳ Ｐゴシック" size="15" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ15]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="160" width="192" height="30" uuid="e2313145-9986-4eed-a020-83575e51a500"/>
+				<textElement>
+					<font fontName="IPA P Gothic" size="10"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="192" height="30" uuid="8e3b6ae5-b40d-4b98-a4ad-645dd3133ce8"/>
+				<textElement>
+					<font fontName="ＭＳ Ｐゴシック" size="10" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ10]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="277" width="192" height="30" uuid="d480a57e-9407-42fb-b96f-e45ce4f9ccaa"/>
+				<textElement>
+					<font fontName="ＭＳ Ｐゴシック" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ6]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="247" width="192" height="30" uuid="94252310-1bf5-4038-bc77-bcf9db7f5d4b"/>
+				<textElement>
+					<font fontName="IPA P Gothic" size="6"/>
+				</textElement>
+				<text><![CDATA[フォントサイズ6]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
