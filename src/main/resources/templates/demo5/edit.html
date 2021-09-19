@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/demo5/update}" method="POST" th:object="${demo5Form}">
+
+    <div th:if="${#fields.hasAnyErrors()}">
+        <ul>
+            <li th:each="err : ${#fields.allErrors()}" th:text="${err}" />
+        </ul>
+    </div>
+
+    <div>
+        id: <input type="text" th:field="*{id}"/>
+        name: <input type="text" th:field="*{name}"/>
+        <button type="submit">更新</button>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+                <th>No</th>
+                <th>id</th>
+                <th>名称</th>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td><input type="text" name="detailList[0].id"/></td>
+                <td><input type="text" name="detailList[0].name"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" name="detailList[1].id"/></td>
+                    <td><input type="text" name="detailList[1].name"/></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" name="detailList[2].id"/></td>
+                    <td><input type="text" name="detailList[2].name"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</form>
+</body>
+</html>
