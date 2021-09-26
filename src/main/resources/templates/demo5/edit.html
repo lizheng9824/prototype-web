@@ -9,7 +9,11 @@
 
     <div th:if="${#fields.hasAnyErrors()}">
         <ul>
-            <li th:each="err : ${#fields.allErrors()}" th:text="${err}" />
+
+            <li th:each="message : ${@listErrorMessageHandler.handleMessage(#fields, #locale)}" th:text="${message}" />
+            <!--
+            <li th:each="message : ${#fields.allErrors()}" th:text="${message}" />
+            -->
         </ul>
     </div>
 

@@ -5,13 +5,30 @@
     <title>Menu</title>
     <script type="text/javascript" src="/js/demo1.js"></script>
     <script>
+        var subwindows = [];
         function openMenu(menuItem) {
             var session = uuid();
             var url = menuItem.href + "?subsessionid=" + session;
-            window.open(url);
+            var subwindow = window.open(url);
+            subwindows.push(subwindow);
             event.preventDefault();
             event.stopPropagation();
         }
+
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = ' ';
+        }, false);
+
+        window.addEventListener('unload', (event) => {
+            for(var i =0; i < subwindows.length; i++) {
+                var subwindow = subwindows[i];
+                if (subwindow != null) {
+                    subwindow.close();
+                }
+            }
+        });
+
     </script>
 </head>
 <body>
